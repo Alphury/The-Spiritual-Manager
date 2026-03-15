@@ -1,1 +1,1 @@
-# Spiritual-Manager
+# The-Spiritual-Manager
