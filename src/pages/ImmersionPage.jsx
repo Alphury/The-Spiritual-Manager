@@ -27,7 +27,7 @@ function ImmersionPage() {
         <div className="immersion-flow-container">
           <div className="immersion-flow-header">
             <p className="section-tag">WHAT HAPPENS INSIDE</p>
-            <h2 className="immersion-flow-title">A 2.5 Day Leadership Reset</h2>
+            <h2 className="immersion-flow-title">A 2 And A Half Day Leadership Reset</h2>
           </div>
 
           <div className="immersion-days-grid">
