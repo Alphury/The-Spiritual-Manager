@@ -3,7 +3,7 @@ function FrameworkSection() {
     <section className="framework-section">
       <div className="framework-container">
         <div className="framework-header">
-          <p className="section-tag">THE 3 PILLAR FRAMEWORK</p>
+          <h1 className="section-tag">THE 3 PILLAR FRAMEWORK</h1>
           <h2 className="framework-title">A Conscious Leadership Operating System</h2>
         </div>
 
