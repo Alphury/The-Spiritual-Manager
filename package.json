@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://alphury.github.io/The-Spiritual-Manager/",
+  "homepage": "https://www.thespiritualmanager.com/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
