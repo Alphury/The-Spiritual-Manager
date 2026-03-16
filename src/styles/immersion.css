@@ -150,14 +150,20 @@
   }
 
   .immersion-days-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+    width: 100%;
   }
 
   .immersion-day-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     min-height: auto;
-    padding: 1.5rem;
-    border-radius: 20px;
+    padding: 1.4rem;
+    border-radius: 18px;
+    overflow: hidden;
   }
 
   .immersion-day-label {
@@ -169,9 +175,9 @@
   }
 
   .immersion-day-card li {
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 
   /* APPLICATION FIT */
   .immersion-fit-section {
@@ -193,13 +199,19 @@
   }
 
   .immersion-fit-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+    width: 100%;
   }
 
   .immersion-fit-card {
-    padding: 1.5rem;
-    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 1.4rem;
+    border-radius: 18px;
+    overflow: hidden;
   }
 
   .immersion-fit-card-label {
@@ -207,8 +219,8 @@
   }
 
   .immersion-fit-card li {
-    font-size: 0.96rem;
-    line-height: 1.7;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 }
 /*----------------------------- IMMERSION FLOW SECTION -----------------------------*/

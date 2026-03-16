@@ -376,12 +376,18 @@
   }
 
   .pillar-card {
-    padding: 1.5rem;
-    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 1.3rem;
+    border-radius: 18px;
+    overflow: hidden;
   }
 
   .pillar-item p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    overflow-wrap: break-word;
   }
 
   /* EXPERIENCE SECTION */
@@ -404,13 +410,19 @@
   }
 
   .experience-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+    width: 100%;
   }
 
   .experience-card {
-    padding: 1.5rem;
-    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 1.4rem;
+    border-radius: 18px;
+    overflow: hidden;
   }
 
   .experience-list li {
@@ -422,8 +434,8 @@
   }
 
   .experience-flow p {
-    font-size: 1.15rem;
-    line-height: 1.45;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   /* FRAMEWORK SECTION */
@@ -441,15 +453,21 @@
   }
 
   .framework-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-    margin-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
   .framework-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     min-height: auto;
-    padding: 1.5rem;
-    border-radius: 20px;
+    padding: 1.4rem;
+    border-radius: 18px;
+    overflow: hidden;
   }
 
   .framework-number {
@@ -461,8 +479,8 @@
   }
 
   .framework-card p {
-    font-size: 0.96rem;
-    line-height: 1.7;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .framework-closing h3 {

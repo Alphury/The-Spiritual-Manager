@@ -10,7 +10,9 @@
   --text-muted: #bdbdbd;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,12 +20,27 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
+  margin: 0;
   background-color: var(--bg-black);
   color: var(--text-light);
   font-family: 'Inter', sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -36,4 +53,69 @@ button {
   font-family: inherit;
   border: none;
   outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* TEXT OVERFLOW SAFETY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+button,
+span {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* BUTTON OVERFLOW SAFETY */
+.primary-btn,
+.secondary-btn,
+.assessment-coming-btn {
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+}
+
+/* GLOBAL CONTAINER SAFETY */
+section,
+div,
+main,
+header,
+footer,
+nav {
+  max-width: 100%;
+}
+
+/* OPTIONAL: cleaner tap behavior on mobile */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* MOBILE SAFETY */
+@media (max-width: 768px) {
+  html,
+  body,
+  #root {
+    overflow-x: hidden;
+  }
+
+  .primary-btn,
+  .secondary-btn,
+  .assessment-coming-btn {
+    width: 100%;
+    max-width: 320px;
+  }
 }
