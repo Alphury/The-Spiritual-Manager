@@ -1,6 +1,6 @@
 import Navbar from "../components/layout/Navbar";
 import "../styles/about.css";
-import raviImage from "../assets/images/placeholder.jpg";
+import raviImage from "../assets/images/raviimg.jpg";
 
 function AboutPage() {
   return (
