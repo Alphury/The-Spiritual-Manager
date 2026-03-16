@@ -99,25 +99,33 @@
 
 /* MOBILE */
 @media (max-width: 768px) {
+  /* HERO */
   .immersion-hero {
     padding: 7rem 1.2rem 4rem;
+    min-height: 100vh;
   }
 
   .immersion-hero-content {
     transform: translateY(0);
   }
 
+  .immersion-tag {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
   .immersion-title {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
+    line-height: 1.2;
   }
 
   .immersion-location {
-    font-size: 1.05rem;
+    font-size: 1rem;
     letter-spacing: 1px;
   }
 
   .immersion-subtitle {
-    font-size: 1rem;
+    font-size: 0.98rem;
     line-height: 1.7;
   }
 
@@ -126,8 +134,83 @@
     height: 28vh;
     bottom: -4%;
   }
-}
 
+  /* WHAT HAPPENS INSIDE */
+  .immersion-flow-section {
+    padding: 5rem 1.2rem;
+  }
+
+  .immersion-flow-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .immersion-flow-title {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+
+  .immersion-days-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .immersion-day-card {
+    min-height: auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .immersion-day-label {
+    font-size: 0.75rem;
+  }
+
+  .immersion-day-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .immersion-day-card li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* APPLICATION FIT */
+  .immersion-fit-section {
+    padding: 5rem 1.2rem;
+  }
+
+  .immersion-fit-header {
+    margin-bottom: 2.4rem;
+  }
+
+  .immersion-fit-tag {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .immersion-fit-title {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+
+  .immersion-fit-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .immersion-fit-card {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .immersion-fit-card-label {
+    font-size: 1.2rem;
+  }
+
+  .immersion-fit-card li {
+    font-size: 0.96rem;
+    line-height: 1.7;
+  }
+}
 /*----------------------------- IMMERSION FLOW SECTION -----------------------------*/
 .immersion-flow-section {
   position: relative;

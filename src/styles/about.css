@@ -1,0 +1,320 @@
+/* ABOUT PAGE */
+
+.about-hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #040404 0%, #090909 45%, #0a0a0a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 5rem;
+  overflow: hidden;
+}
+
+.about-hero-glow {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 240, 170, 0.16) 0%,
+    rgba(244, 196, 48, 0.12) 26%,
+    rgba(212, 175, 55, 0.06) 44%,
+    rgba(0, 0, 0, 0) 72%
+  );
+  filter: blur(45px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-hero-image-wrap {
+  position: relative;
+}
+
+.about-hero-image {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35),
+    0 0 30px rgba(244, 196, 48, 0.04);
+  display: block;
+}
+
+.about-tag {
+  color: #f5a513;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-title {
+  font-family: 'Cinzel', serif;
+  font-size: 4.2rem;
+  line-height: 1.1;
+  color: #f5a513;
+  margin-bottom: 1rem;
+  text-shadow:
+    0 0 18px rgba(244, 196, 48, 0.08),
+    0 0 36px rgba(244, 196, 48, 0.03);
+}
+
+.about-role {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: var(--accent-silver);
+  margin-bottom: 0.4rem;
+}
+
+.about-role-sub {
+  font-size: 1rem;
+  color: var(--text-light);
+  letter-spacing: 0.4px;
+  margin-bottom: 1.6rem;
+}
+
+.about-intro {
+  max-width: 680px;
+  font-size: 1.08rem;
+  color: var(--text-light);
+  line-height: 1.9;
+}
+
+.about-section {
+  position: relative;
+  padding: 6.5rem 2rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.08);
+}
+
+.about-journey-section {
+  background: linear-gradient(to bottom, #050505 0%, #090909 100%);
+}
+
+.about-strategy-section {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(244, 196, 48, 0.04), transparent 26%),
+    linear-gradient(to bottom, #080808 0%, #0a0a0a 100%);
+}
+
+.about-present-section {
+  background:
+    linear-gradient(135deg, #f4c430 0%, #f5a513 45%, #c89b2a 100%);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-section-tag {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-journey-section .about-section-tag,
+.about-strategy-section .about-section-tag {
+  color: #f5a513;
+}
+
+.about-present-section .about-section-tag {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.about-section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.about-journey-section .about-section-title,
+.about-strategy-section .about-section-title {
+  color: #f5a513;
+}
+
+.about-present-section .about-section-title {
+  color: #111111;
+}
+
+.about-text-block {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.about-journey-section .about-text-block p,
+.about-strategy-section .about-text-block p {
+  color: var(--text-light);
+}
+
+.about-present-section .about-text-block p {
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.about-text-block p {
+  font-size: 1.08rem;
+  line-height: 1.95;
+  text-align: center;
+}
+
+.about-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(212, 175, 55, 0.14);
+  border-radius: 24px;
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+  box-shadow:
+    0 0 24px rgba(244, 196, 48, 0.03),
+    inset 0 0 18px rgba(255, 255, 255, 0.01);
+}
+
+.about-card h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: #f5a513;
+  margin-bottom: 1rem;
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.85;
+}
+
+.about-closing-line {
+  font-family: 'Cinzel', serif;
+  font-size: 1.35rem !important;
+  line-height: 1.7 !important;
+  font-weight: 600;
+}
+
+/*------------------------------- MOBILE ------------------------------------*/
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: auto;
+    padding: 7rem 1.2rem 4rem;
+  }
+
+  .about-hero-glow {
+    width: 260px;
+    height: 260px;
+    right: 50%;
+    top: 18%;
+    transform: translateX(50%);
+    filter: blur(30px);
+  }
+
+  .about-hero-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .about-hero-image {
+    max-width: 280px;
+    margin: 0 auto;
+    border-radius: 22px;
+  }
+
+  .about-title {
+    font-size: 2.4rem;
+  }
+
+  .about-role {
+    font-size: 1.15rem;
+  }
+
+  .about-role-sub {
+    font-size: 0.95rem;
+  }
+
+  .about-intro {
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+
+  .about-section {
+    padding: 5rem 1.2rem;
+  }
+
+  .about-section-header {
+    margin-bottom: 2.2rem;
+  }
+
+  .about-section-tag {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .about-section-title {
+    font-size: 2rem;
+  }
+
+  .about-text-block {
+    gap: 1rem;
+  }
+
+  .about-text-block p {
+    font-size: 0.96rem;
+    line-height: 1.8;
+  }
+
+  .about-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .about-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-card p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .about-closing-line {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+  }
+}

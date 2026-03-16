@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function RishikeshSection() {
   return (
     <section className="rishikesh-section">
@@ -17,6 +19,11 @@ function RishikeshSection() {
         <div className="rishikesh-closing">
           <p>Rishikesh offers what leaders forget:</p>
           <h3>Stillness.</h3>
+        </div>
+        <div className="hero-buttons">
+          <Link to="/immersion" className="primary-btn">
+            Know More About The Rishikesh Immersion
+          </Link>
         </div>
       </div>
     </section>
