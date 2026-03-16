@@ -3,14 +3,14 @@ function PhilosophySection() {
     <section className="philosophy-section">
       <div className="philosophy-container">
         <div className="philosophy-left">
-          <h1 className="section-tag">WHAT IS THE SPIRITUAL MANAGER?</h1>
+          <h1 className="section-tag">WHAT IS SPIRITUAL MANAGMENT?</h1>
 
           <h2 className="philosophy-title">
             A Leadership Philosophy for the Conscious Age
           </h2>
 
           <p className="philosophy-intro">
-            The Spiritual Manager is a leadership philosophy.
+            Spiritual Management is a leadership philosophy.
           </p>
 
           <p className="philosophy-body">
