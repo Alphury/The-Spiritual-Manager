@@ -3,7 +3,7 @@ function PhilosophySection() {
     <section className="philosophy-section">
       <div className="philosophy-container">
         <div className="philosophy-left">
-          <p className="section-tag">WHAT IS THE SPIRITUAL MANAGER?</p>
+          <h1 className="section-tag">WHAT IS THE SPIRITUAL MANAGER?</h1>
 
           <h2 className="philosophy-title">
             A Leadership Philosophy for the Conscious Age
