@@ -64,12 +64,6 @@ img {
 }
 
 /* TEXT OVERFLOW SAFETY */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 a,
 li,
@@ -77,6 +71,18 @@ button,
 span {
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+/* HEADINGS SHOULD WRAP NATURALLY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 /* BUTTON OVERFLOW SAFETY */

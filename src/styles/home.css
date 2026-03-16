@@ -344,8 +344,19 @@
   }
 
   .philosophy-container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+  }
+
+  .philosophy-right,
+  .philosophy-left {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   .philosophy-title {
@@ -376,18 +387,28 @@
   }
 
   .pillar-card {
+    display: block;
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    padding: 1.3rem;
+    min-height: auto;
+    padding: 1.25rem;
     border-radius: 18px;
-    overflow: hidden;
+    overflow: visible; /* important */
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .pillar-item {
+    width: 100%;
+    min-width: 0;
   }
 
   .pillar-item p {
     font-size: 0.95rem;
     line-height: 1.65;
-    overflow-wrap: break-word;
+    word-break: normal;
+    overflow-wrap: normal;
   }
 
   /* EXPERIENCE SECTION */
