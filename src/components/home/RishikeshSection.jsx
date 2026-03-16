@@ -6,7 +6,7 @@ function RishikeshSection() {
       <div className="rishikesh-sun"></div>
 
       <div className="rishikesh-container">
-        <p className="section-tag">WHY RISHIKESH?</p>
+        <h1 className="section-tag">WHY RISHIKESH?</h1>
 
         <h2 className="rishikesh-title">Because clarity requires environment.</h2>
 
