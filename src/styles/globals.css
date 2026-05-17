@@ -75,23 +75,22 @@ span {
 
 /* HEADINGS SHOULD WRAP NATURALLY & SCALE DOWN ON MOBILE */
 h1, h2, h3, h4, h5, h6 {
-  text-wrap: pretty;        /* Cleaner than balance for preventing awkward single-word lines */
-  overflow-wrap: break-word; /* Safety net: breaks text only if a word is literally wider than the screen */
-  word-break: normal;       /* Keeps standard word boundaries intact */
-  hyphens: none;            /* Kept as per your preference: absolutely no hyphens */
-  max-width: 100%;          /* Prevents the heading element itself from pushing past its parent */
+  text-wrap: pretty;
+  
+  /* CHANGE THESE TWO LINES: This forces the browser to keep the word intact */
+  overflow-wrap: normal; 
+  word-break: keep-all;   
+  
+  hyphens: none;
+  max-width: 100%;
 }
 
 /* Specific fluid sizing for h1 to completely prevent mobile overflow */
 h1 {
-  /* clamp(MIN_SIZE, RESPONSIVE_PREFERRED_SIZE, MAX_SIZE) */
-  /* This smoothly scales down your h1 on mobile so it doesn't need to break words */
-  font-size: clamp(2rem, 5vw + 1rem, 3.5rem); 
+  /* ADJUSTED CLAMP VALUES: Lowered the minimum size to 1.4rem and preferred to 4vw */
+  font-size: clamp(1.4rem, 4vw + 0.8rem, 3.5rem); 
+  line-height: 1.2; /* Tighter line height prevents giant gaps if it wraps between words */
 }
-
-/* Optional: Scale down h2 and h3 slightly for mobile view as well */
-h2 { font-size: clamp(1.75rem, 4vw + 1rem, 2.75rem); }
-h3 { font-size: clamp(1.5rem, 3vw + 1rem, 2.25rem); }
 
 /* BUTTON OVERFLOW SAFETY */
 .primary-btn,
