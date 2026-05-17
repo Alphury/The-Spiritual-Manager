@@ -369,7 +369,7 @@
   /* 1. FIX: Targets any section tag inside philosophy so it matches our perfect size */
   .philosophy-section .section-tag,
   h1.section-tag {
-    font-size: clamp(2.2rem, 7vw, 3rem) !important;
+    font-size: clamp(2.7rem, 7vw, 3rem) !important;
     word-break: keep-all !important;
     white-space: normal !important;
     overflow-wrap: normal !important;
@@ -1119,4 +1119,3 @@
     0 0 18px rgba(244, 196, 48, 0.08),
     0 0 32px rgba(244, 196, 48, 0.04);
 }
-
