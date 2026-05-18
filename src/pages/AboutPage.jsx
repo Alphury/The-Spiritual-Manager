@@ -1,4 +1,5 @@
 import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 import "../styles/about.css";
 import raviImage from "../assets/images/raviimg.jpeg";
 
@@ -117,6 +118,7 @@ function AboutPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

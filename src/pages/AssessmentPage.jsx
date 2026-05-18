@@ -1,4 +1,5 @@
 import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 import "../styles/assessment.css";
 import "../styles/immersion.css";
 
@@ -42,6 +43,7 @@ function AssessmentPage() {
           </p>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
